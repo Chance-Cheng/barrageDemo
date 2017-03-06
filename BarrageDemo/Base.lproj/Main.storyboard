@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,11 +29,20 @@
                                     <constraint firstAttribute="height" constant="439" id="X3E-02-axR"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击屏幕生成弹幕" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOS-Pi-0dE">
+                                <rect key="frame" x="53" y="468" width="270" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.38823529410000002" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="SOS-Pi-0dE" secondAttribute="trailing" constant="36" id="LkJ-G6-cIV"/>
                             <constraint firstItem="gZh-Rq-o3u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xet-5H-tiG"/>
                             <constraint firstItem="gZh-Rq-o3u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b4n-CM-vrp"/>
+                            <constraint firstItem="SOS-Pi-0dE" firstAttribute="top" secondItem="gZh-Rq-o3u" secondAttribute="bottom" constant="29" id="dE9-f4-UbV"/>
+                            <constraint firstItem="SOS-Pi-0dE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="dSa-7d-RQq"/>
                             <constraint firstAttribute="trailing" secondItem="gZh-Rq-o3u" secondAttribute="trailing" id="wi6-ZP-YRX"/>
                         </constraints>
                     </view>
